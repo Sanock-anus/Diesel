@@ -4,7 +4,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #eee;
-    background-color: #1a1a1a; /* Темный фон */
+    background-color: #1a1a1a;
 }
 
 .container {
@@ -15,12 +15,12 @@ body {
 }
 
 header {
-    background-color: #2a2a2a; /* Темный фон хедера */
+    background-color: #2a2a2a;
     padding: 20px 0;
 }
 
 header .container {
-    display: flex; /* Для разделения левой и правой частей хедера */
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -72,13 +72,12 @@ main p {
 
 main .main-content {
     display: flex;
-    flex-direction: column; /* Располагаем элементы вертикально */
+    flex-direction: column;
     align-items: center;
     padding: 20px;
     width: 100%;
 }
 
-/*  Поиск */
 .search-container {
    display: flex;
    align-items: center;
@@ -107,7 +106,6 @@ main .main-content {
 .search-container button:hover{
      background-color: #777;
 }
-/* Конец поиска */
 
 .button {
     display: inline-block;
@@ -138,17 +136,28 @@ main .main-content {
      background-color: #333;
     padding: 20px;
     border-radius: 8px;
-    text-align: center;
-    width: 300px;
+     width: 300px;
+}
+.game-header {
+      display: flex;
+    align-items: center;
+}
+.game-header h3 {
+     margin: 0 0 10px 10px;
 }
 
 .game-item h3 {
      margin-top: 0;
     margin-bottom: 10px;
 }
+.author-avatar {
+  width: 30px;
+  height: 30px;
+ border-radius: 50%;
+}
 
 footer {
-    background-color: #2a2a2a; /* Темный фон футера */
+    background-color: #2a2a2a;
     text-align: center;
     padding: 20px 0;
      margin-top: auto;
@@ -160,6 +169,30 @@ footer {
      color: #aaa;
      margin-bottom: 20px;
 }
+#account-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-icon {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.account-icon img {
+     width: 100px;
+    height: 100px;
+   border-radius: 50%;
+}
+.account-icon button{
+     position: absolute;
+     left: 50%;
+    transform: translate(-50%, 100%);
+    margin-top: 10px;
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .container {
@@ -183,7 +216,7 @@ footer {
     }
      header .container {
         flex-direction: column;
-        align-items: flex-start; /* Выравниваем элементы по левому краю */
+        align-items: flex-start;
     }
 
    header .header-right {

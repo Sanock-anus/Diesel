@@ -24,11 +24,13 @@
           <div id="dashboard">
                <button id="uploadGameBtn" class="button">Загрузить игру</button>
                  <div id="uploadForm" style="display:none;">
-                    <label for="gameName">Название игры:</label>
-                    <input type="text" id="gameName" required><br><br>
-                    <label for="gameFile">Файл игры:</label>
-                    <input type="file" id="gameFile" required><br><br>
-                    <button id="submitGameBtn" class="button">Загрузить</button>
+                   <form id="uploadFormReal" enctype="multipart/form-data">
+                        <label for="gameName">Название игры:</label>
+                       <input type="text" id="gameName" name="gameName" required><br><br>
+                        <label for="gameFile">Файл игры:</label>
+                        <input type="file" id="gameFile" name="gameFile" required><br><br>
+                        <button type="submit" id="submitGameBtn" class="button">Загрузить</button>
+                    </form>
                 </div>
                 <div id="walletInfo">
                     <h3>Кошелёк</h3>

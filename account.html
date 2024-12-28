@@ -22,8 +22,15 @@
     <main>
         <section class="container main-content">
           <h2>Аккаунт</h2>
-           <p>Здесь будет личный кабинет пользователя.</p>
-           <p>В разработке.</p>
+           <div id="account-info">
+               <div class="account-icon">
+                  <img id="profile-icon" src="default-icon.png" alt="Иконка аккаунта">
+                  <input type="file" id="icon-upload" accept="image/*" style="display:none;">
+                  <button id="change-icon" class="button">Сменить иконку</button>
+               </div>
+               <p>Имя пользователя: <span id="usernameDisplay"></span></p>
+               <p>Зарегистрирован: <span id="days-registered"></span> дней</p>
+            </div>
         </section>
     </main>
     <footer>
